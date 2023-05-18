@@ -38,7 +38,20 @@ Inciialmente utilizaremos o resource ``docker_image`` que serve para baixar a im
 
 - A documentação do Terraform é excelente e lista todos os resources suportados, bem como todos os atributos suportados por cada resource.
 
+No arquivo mario.tf insira o seguinte código inicialmente:
 
+``` terraform
+# Baixar a imagem do Projeto Docker-SuperMario
+resource "docker_image" "image_teste" {
+  name = "pengbai/docker-supermario:latest"
+}
+```
+
+
+
+
+Agora, no CMD ou Terminal, execute o seguinte comando: ```terraform init```.
+ - Este comando inicia nosso ambiente e baixa os plugins necessários para nosso projeto.
 
 
 
