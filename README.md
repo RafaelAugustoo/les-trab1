@@ -73,11 +73,92 @@ resource "docker_container" "image_teste" {
   }
 }
 ```
+Por fim, adicionaremos providers, que são necessários para que o programa funcione, que são referências aos "provedores" no caso aqui localhost e ao docker que estamos utilizando.
+Portanto, o código final é este:
+``` terraform
+provider "local" {}
 
-Agora, no CMD ou Terminal, execute o seguinte comando: ```terraform init```.
+# Baixa a imagem do Projeto Docker-SuperMario
+resource "docker_image" "image_teste" {
+  name = "pengbai/docker-supermario:latest"
+}
+
+# Inicia o Container
+resource "docker_container" "image_teste" {
+  image = "${docker_image.image_teste.image_id}"
+  name  = "supermario"
+  ports {
+    internal = "8080"
+    external = "80"
+  }
+}
+
+#Seta os provedores para não dar erro an hora do terraform init/plan
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+    }
+    local = {
+      source = "hashicorp/local"
+    }
+  }
+  required_version = ">= 0.13"
+}
+```
+
+### Agora, no CMD ou Terminal, execute o seguinte comando: ```terraform init```.
  - Este comando inicia nosso ambiente e baixa os plugins necessários para nosso projeto.
+ - O retorno gerado pelo comando, deve ser algo parecido com o que obtivemos abaixo:
+ ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/0f980114-a914-4250-911b-486edbf755b7)
+ 
+O próximo passo será executar o planejamento do código. Ao rodar o planejamento o Terraform listará exatamente tudo o que fará caso o código seja de fato executado. 
 
+### - No CMD ou Terminal execute: ```terraform plan```. 
 
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/411bfcfc-9d14-4ed6-83e8-e5b16423d902)
 
+Caso você tenha recebido um retorno similar a este, significa que tudo parece correto. Ao fim da linha, ele mostra quantos itens que serão adicionados, alterados ou destruídos.
+
+### Após o sucesso do comando anterios, no CMD ou Terminal, execute o seguinte: ```terraform apply```.
+
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/d1eb631c-e001-4a53-b4c1-1b6770e374b9)
+
+O Terraform avaliou o código e nos indicou o que será realizado, perguntando ao final se queremos ou não seguir com a execução. 
+
+Caso tudo nos pareça correto, basta digitar ```yes```  e pressionar Enter novamente para que ele siga com a execução de fato.
+
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/410d28e5-fe93-4134-b643-1de2100d04a9)
+
+###Curiosidade
+O Terraform também nos permite saber o que estamos utilizando em termos de resources através do comando ```terraform show```.
+
+###Execute agora ````docker```` ps para ver os containers que estão rodando neste momento:
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/e006e127-6c0b-40d3-8c3d-41eabfa06bdd)
+
+###Por fim, abra o navegador e acesse o seguinte endereço: ````localhost:80````.
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/c235ebfe-fb6e-4bca-91ee-5567c290d8eb)
+
+###Curiosidade 2
+
+O Terraform também nos permite destruir a nossa infraestrutura com o comando terraform destroy. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
+![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/430fbd48-9761-4157-8450-7f55686beb47)
+
+##Referências 
+
+- [Automatize a sua estrutura com Terraform
+](https://medium.com/vindi/automatizando-a-infraestrutura-com-terraform-7cbd4b15ac1)
+- [Terraform.io](https://www.terraform.io/)
+- [Docker](https://www.docker.com/)
+- [Infraestrutura como Código com Terraform](https://blog.marcelocavalcante.net/infraestrutura-como-c%C3%B3digo-com-terraform/)
+- [Terraform: Variáveis e Outputs](https://blog.marcelocavalcante.net/terraform-vari%C3%A1veis-e-outputs/)
+- [Introdução ao Terraform](https://blog.marcelocavalcante.net/introdu%C3%A7%C3%A3o-ao-terraform/]
+
+##Créditos
+Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenharia de Software 1 do CEFET-MG.
+
+- MATEUS LEMOS DE FREITAS BARBOSA  - matricula
+- RAFAEL AUGUSTO DE SOUZA - 20193025261
+- TÚLIO FERREIRA HORTA - matricula 
 
 
