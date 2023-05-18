@@ -130,21 +130,21 @@ Caso tudo nos pareça correto, basta digitar ```yes```  e pressionar Enter novam
 
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/410d28e5-fe93-4134-b643-1de2100d04a9)
 
-###Curiosidade
+### Curiosidade
 O Terraform também nos permite saber o que estamos utilizando em termos de resources através do comando ```terraform show```.
 
-###Execute agora ````docker```` ps para ver os containers que estão rodando neste momento:
+### Execute agora ````docker```` ps para ver os containers que estão rodando neste momento:
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/e006e127-6c0b-40d3-8c3d-41eabfa06bdd)
 
-###Por fim, abra o navegador e acesse o seguinte endereço: ````localhost:80````.
+### Por fim, abra o navegador e acesse o seguinte endereço: ````localhost:80````.
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/c235ebfe-fb6e-4bca-91ee-5567c290d8eb)
 
-###Curiosidade 2
+### Curiosidade 2
 
 O Terraform também nos permite destruir a nossa infraestrutura com o comando terraform destroy. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/430fbd48-9761-4157-8450-7f55686beb47)
 
-##Referências 
+## Referências 
 
 - [Automatize a sua estrutura com Terraform
 ](https://medium.com/vindi/automatizando-a-infraestrutura-com-terraform-7cbd4b15ac1)
@@ -154,7 +154,7 @@ O Terraform também nos permite destruir a nossa infraestrutura com o comando te
 - [Terraform: Variáveis e Outputs](https://blog.marcelocavalcante.net/terraform-vari%C3%A1veis-e-outputs/)
 - [Introdução ao Terraform](https://blog.marcelocavalcante.net/introdu%C3%A7%C3%A3o-ao-terraform/]
 
-##Créditos
+## Créditos
 Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenharia de Software 1 do CEFET-MG.
 
 - MATEUS LEMOS DE FREITAS BARBOSA  - matricula
