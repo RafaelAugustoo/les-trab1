@@ -23,9 +23,21 @@ Docker é uma plataforma de código aberto que permite empacotar, distribuir e e
 - Em seguida cheque a versão do terraform no seu sistema e veja se é a mais atual ```terraform --version```
 
 ## O que faremos ?
-Rodaremos um jogo do Mário Bros no navegador, porém queremos que ele rode em um container, pois queremos uma aplicação em uma infraestrutura moderna e que possa ser capaz de rodar em qualquer local, seja em um servidor físico local, uma VM ou mesmo um provedor na nuvem. 
+Rodaremos um jogo do Super Mario Bros no navegador, porém queremos que ele rode em um container, pois queremos uma aplicação em uma infraestrutura moderna e que possa ser capaz de rodar em qualquer local, seja em um servidor físico local, uma VM ou mesmo um provedor na nuvem. 
 
-O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mário](https://hub.docker.com/r/pengbai/docker-supermario/)
+O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mario](https://hub.docker.com/r/pengbai/docker-supermario/)
+
+### 1° Crie um diretório com nome a sua escolha;
+### Dentro do diretório crie um novo arquivo chamado mario.tf.
+
+A principio iremos inserir um ```resource```, sendo o mais básico em um código ou módulo Terraform, o resource, ou recurso. O Terraform suporta centenas de recursos diferentes, dentre eles o docker_image, que será o recurso de que precisaremos inicialmente.
+
+O resource no Terraform é composta por 2 paramêtros, um deles é o tipo e o outro é o nome para este resource.
+
+Inciialmente utilizaremos o resource ``docker_image`` que serve para baixar a imagem do nosso jogo.
+
+- A documentação do Terraform é excelente e lista todos os resources suportados, bem como todos os atributos suportados por cada resource.
+
 
 
 
