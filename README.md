@@ -41,14 +41,38 @@ Inciialmente utilizaremos o resource ``docker_image`` que serve para baixar a im
 No arquivo mario.tf insira o seguinte código inicialmente:
 
 ``` terraform
-# Baixar a imagem do Projeto Docker-SuperMario
+# Baixa a imagem do Projeto Docker-SuperMario
 resource "docker_image" "image_teste" {
   name = "pengbai/docker-supermario:latest"
 }
 ```
 
+Agora, vamos adicionar mais um resource em nosso código, desta vez um resource de tipo docker_container. Como o nome já diz, este resource lida com o container em si, e não mais apenas com a imagem.
+- Dentro do bloco, listaremos os atributos dele, o primeiro atributo seria o ```image```  nele utilizaremos nossa primeira interpolação, onde reutilizaremos valores de outra parte de nosso código como se fossem variáveis. 
 
+Em nosso resource anterior, docker_image, demos um nome image_teste que será utilizado agora. Incluiremos também a tag image_id, pois, conforme vamos ver na saída de nosso comando terraform show, esta foi a tag utilizada pelo terraform para identificar o último status daquele resource.
 
+- O segundo atributo no docker_ontainer seria o name, que chamaremos de supermario.
+- Por fim, indicamos as portas, pois toda aplicação necessita de portas para funcionar, aqui listamos 2 portas, a ```intern``` que é utilizada internamente no container, e a ```extern``` que é utilizada pelo Docker, para acessarmos a aplicação localmente.
+
+Logo o código agora fica assim:
+
+``` terraform
+# Baixa a imagem do Projeto Docker-SuperMario
+resource "docker_image" "image_teste" {
+  name = "pengbai/docker-supermario:latest"
+}
+
+# Inicia o Container
+resource "docker_container" "image_teste" {
+  image = "${docker_image.image_teste.image_id}"
+  name  = "supermario"
+  ports {
+    internal = "8080"
+    external = "80"
+  }
+}
+```
 
 Agora, no CMD ou Terminal, execute o seguinte comando: ```terraform init```.
  - Este comando inicia nosso ambiente e baixa os plugins necessários para nosso projeto.
