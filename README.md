@@ -120,7 +120,7 @@ O próximo passo será executar o planejamento do código. Ao rodar o planejamen
 
 Caso você tenha recebido um retorno similar a este, significa que tudo parece correto. Ao fim da linha, ele mostra quantos itens que serão adicionados, alterados ou destruídos.
 
-### Após o sucesso do comando anterios, no CMD ou Terminal, execute o seguinte: ```terraform apply```.
+### Após o sucesso do comando anterior, no CMD ou Terminal, execute o seguinte: ```terraform apply```.
 
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/d1eb631c-e001-4a53-b4c1-1b6770e374b9)
 
@@ -133,7 +133,7 @@ Caso tudo nos pareça correto, basta digitar ```yes```  e pressionar Enter novam
 ### Curiosidade
 O Terraform também nos permite saber o que estamos utilizando em termos de resources através do comando ```terraform show```.
 
-### Execute agora ````docker```` ps para ver os containers que estão rodando neste momento:
+### Execute agora ````docker ps```` para ver os containers que estão rodando neste momento:
 ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/e006e127-6c0b-40d3-8c3d-41eabfa06bdd)
 
 ### Por fim, abra o navegador e acesse o seguinte endereço: ````localhost:80````.
@@ -146,13 +146,12 @@ O Terraform também nos permite destruir a nossa infraestrutura com o comando te
 
 ## Referências 
 
-- [Automatize a sua estrutura com Terraform
-](https://medium.com/vindi/automatizando-a-infraestrutura-com-terraform-7cbd4b15ac1)
+- [Automatize a sua estrutura com Terraform](https://medium.com/vindi/automatizando-a-infraestrutura-com-terraform-7cbd4b15ac1)
 - [Terraform.io](https://www.terraform.io/)
 - [Docker](https://www.docker.com/)
 - [Infraestrutura como Código com Terraform](https://blog.marcelocavalcante.net/infraestrutura-como-c%C3%B3digo-com-terraform/)
 - [Terraform: Variáveis e Outputs](https://blog.marcelocavalcante.net/terraform-vari%C3%A1veis-e-outputs/)
-- [Introdução ao Terraform](https://blog.marcelocavalcante.net/introdu%C3%A7%C3%A3o-ao-terraform/]
+- [Introdução ao Terraform](https://blog.marcelocavalcante.net/introdu%C3%A7%C3%A3o-ao-terraform/)
 
 ## Créditos
 Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenharia de Software 1 do CEFET-MG.
