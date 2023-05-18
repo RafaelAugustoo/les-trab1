@@ -22,6 +22,12 @@ Docker é uma plataforma de código aberto que permite empacotar, distribuir e e
 - Se usa Linux (Ubuntu) pode fazer via comando: ``` sudo apt install terraform ```
 - Em seguida cheque a versão do terraform no seu sistema e veja se é a mais atual ```terraform --version```
 
+## O que faremos ?
+Rodaremos um jogo do Mário Bros no navegador, porém queremos que ele rode em um container, pois queremos uma aplicação em uma infraestrutura moderna e que possa ser capaz de rodar em qualquer local, seja em um servidor físico local, uma VM ou mesmo um provedor na nuvem. 
+
+O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mário](https://hub.docker.com/r/pengbai/docker-supermario/)
+
+
 
 
 
