@@ -28,7 +28,7 @@ Rodaremos um jogo do Super Mario Bros no navegador, porém queremos que ele rode
 O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mario](https://hub.docker.com/r/pengbai/docker-supermario/)
 
 ### 1° Crie um diretório com nome a sua escolha;
-### Dentro do diretório crie um novo arquivo chamado mario.tf.
+### Dentro do diretório crie um novo arquivo chamado mario.tf .
 
 A principio iremos inserir um ```resource```, sendo o mais básico em um código ou módulo Terraform, o resource, ou recurso. O Terraform suporta centenas de recursos diferentes, dentre eles o docker_image, que será o recurso de que precisaremos inicialmente.
 
