@@ -18,8 +18,8 @@ Docker é uma plataforma de código aberto que permite empacotar, distribuir e e
  ``` sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin ```
  
  ## Instalando o Terraform
-- Se usa Windows pode instalar o Docker via site [aqui](https://developer.hashicorp.com/terraform/downloads?product_intent=terraform);
-- Se usa Linux (Ubuntu) pode fazer via comando: ``` sudo apt install terraform ```
+- Se usa Windows, pode instalar o Terraform via site [aqui](https://developer.hashicorp.com/terraform/downloads?product_intent=terraform). Certifique-se de descompactar o arquivo binário e colocar o diretório onde o binário se encontra nas variáveis de ambiente do sistema (PATH). 
+- Se usa Linux (Ubuntu), pode fazer via comando: ``` sudo apt install terraform ```
 - Em seguida cheque a versão do terraform no seu sistema e veja se é a mais atual ```terraform --version```
 
 ## O que faremos ?
