@@ -156,7 +156,7 @@ O Terraform também nos permite destruir a nossa infraestrutura com o comando te
 ## Créditos
 Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenharia de Software 1 do CEFET-MG.
 
-- MATEUS LEMOS DE FREITAS BARBOSA  - matricula
+- MATEUS LEMOS DE FREITAS BARBOSA  - 20193017591
 - RAFAEL AUGUSTO DE SOUZA - 20193025261
 - TÚLIO FERREIRA HORTA - matricula 
 
