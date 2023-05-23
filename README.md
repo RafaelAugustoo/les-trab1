@@ -142,7 +142,7 @@ O Terraform também nos permite saber o que estamos utilizando em termos de reso
 
 ### Curiosidade 2
 
-O Terraform também nos permite destruir a nossa infraestrutura com o comando terraform destroy. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
+O Terraform também nos permite destruir a nossa infraestrutura com o comando ```terraform destroy```. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
 
 ![8](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/fb78323d-2fe4-41b6-a71d-c8e890fda2d3)
 
