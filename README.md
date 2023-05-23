@@ -153,7 +153,7 @@ O Terraform também nos permite destruir a nossa infraestrutura com o comando te
 - [Terraform: Variáveis e Outputs](https://blog.marcelocavalcante.net/terraform-vari%C3%A1veis-e-outputs/)
 - [Introdução ao Terraform](https://blog.marcelocavalcante.net/introdu%C3%A7%C3%A3o-ao-terraform/)
 
-## Créditos
+## Créditos 
 Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenharia de Software 1 do CEFET-MG.
 
 - MATEUS LEMOS DE FREITAS BARBOSA  - 20193017591
