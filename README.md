@@ -1,8 +1,8 @@
 # Criação de um exemplo prático de automatização de deployment com Terraform 
-Um guia para uma implementaçao de um exemplo prático de automatização com terraform.
+Um guia para uma implementação de um exemplo prático de automatização com terraform.
 
 ## O que é Terraform ?
-Terraform, da Hashicorp, permite criar, alterar e melhorar a infraestrutura de forma segura e previsível. É uma ferramenta Open Source que codifica APIs em arquivos de configuração declarativos que podem ser compartilhados entre membros de um time, tratados como código, editados, revisados e versionados. A principal ideia é além de manter a infraestrutura versionada, é trazer segurança e controle sobre todos os serviços que podemos utilizar em um provedor, tais como AWS, OpenStack, Azure, GCP, etc.
+Terraform, da Hashicorp, permite criar, alterar e melhorar a infraestrutura de forma segura e previsível. É uma ferramenta Open Source que codifica APIs em arquivos de configuração declarativos que podem ser compartilhados entre membros de um time, tratados como código, editados, revisados e versionados. A principal ideia além de manter a infraestrutura versionada, é trazer segurança e controle sobre todos os serviços que podemos utilizar em um provedor, tais como AWS, OpenStack, Azure, GCP, etc.
 Uma vantagem do Terraform é que ele é MultiCloud, ou seja, conseguimos provisionar vários ambientes em diferentes provedores de nuvem usando uma única ferramenta.
 
 ## O que é Deploy ?
@@ -23,7 +23,7 @@ Docker é uma plataforma de código aberto que permite empacotar, distribuir e e
 - Em seguida cheque a versão do terraform no seu sistema e veja se é a mais atual ```terraform --version```
 
 ## O que faremos ?
-Rodaremos um jogo do Super Mario Bros no navegador, porém queremos que ele rode em um container, pois queremos uma aplicação em uma infraestrutura moderna e que possa ser capaz de rodar em qualquer local, seja em um servidor físico local, uma VM ou mesmo um provedor na nuvem. 
+Rodaremos um jogo do Super Mario Bros no navegador, porém queremos que ele rode em um contêiner, pois queremos uma aplicação em uma infraestrutura moderna e que possa ser capaz de rodar em qualquer local, seja em um servidor físico local, uma VM ou mesmo um provedor na nuvem. 
 
 O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mario](https://hub.docker.com/r/pengbai/docker-supermario/)
 
@@ -34,7 +34,7 @@ A principio iremos inserir um ```resource```, sendo o mais básico em um código
 
 O resource no Terraform é composta por 2 paramêtros, um deles é o tipo e o outro é o nome para este resource.
 
-Inciialmente utilizaremos o resource ``docker_image`` que serve para baixar a imagem do nosso jogo.
+Inicialmente utilizaremos o resource ``docker_image`` que serve para baixar a imagem do nosso jogo.
 
 - A documentação do Terraform é excelente e lista todos os resources suportados, bem como todos os atributos suportados por cada resource.
 
@@ -52,7 +52,7 @@ Agora, vamos adicionar mais um resource em nosso código, desta vez um resource 
 
 Em nosso resource anterior, docker_image, demos um nome image_teste que será utilizado agora. Incluiremos também a tag image_id, pois, conforme vamos ver na saída de nosso comando terraform show, esta foi a tag utilizada pelo terraform para identificar o último status daquele resource.
 
-- O segundo atributo no docker_ontainer seria o name, que chamaremos de supermario.
+- O segundo atributo no docker_container seria o name, que chamaremos de supermario.
 - Por fim, indicamos as portas, pois toda aplicação necessita de portas para funcionar, aqui listamos 2 portas, a ```intern``` que é utilizada internamente no container, e a ```extern``` que é utilizada pelo Docker, para acessarmos a aplicação localmente.
 
 Logo o código agora fica assim:
