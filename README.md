@@ -162,6 +162,6 @@ Esse repositório constitui o 1º projeto da disciplina Laboratório de Engenhar
 
 - MATEUS LEMOS DE FREITAS BARBOSA  - 20193017591
 - RAFAEL AUGUSTO DE SOUZA - 20193025261
-- TÚLIO FERREIRA HORTA - matricula 
+- TÚLIO FERREIRA HORTA - 20193017205 
 
 
