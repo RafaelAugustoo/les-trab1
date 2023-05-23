@@ -27,8 +27,8 @@ Rodaremos um jogo do Super Mario Bros no navegador, porém queremos que ele rode
 
 O jogo do Mario já existe e uma imagem para Docker já está disponível para o mesmo através do seguinte link: [Jogo Mario](https://hub.docker.com/r/pengbai/docker-supermario/)
 
-### 1° Crie um diretório com nome a sua escolha;
-### Dentro do diretório crie um novo arquivo chamado mario.tf .
+### Crie um diretório com nome a sua escolha;
+### Dentro do diretório crie um novo arquivo chamado ```mario.tf```.
 
 A principio iremos inserir um ```resource```, sendo o mais básico em um código ou módulo Terraform, o resource, ou recurso. O Terraform suporta centenas de recursos diferentes, dentre eles o docker_image, que será o recurso de que precisaremos inicialmente.
 
@@ -145,6 +145,8 @@ O Terraform também nos permite saber o que estamos utilizando em termos de reso
 O Terraform também nos permite destruir a nossa infraestrutura com o comando ```terraform destroy```. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
 
 ![8](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/fb78323d-2fe4-41b6-a71d-c8e890fda2d3)
+
+#### Agora é a sua vez, testando os conceitos basicos de deployment com terraform, rode o jogo do Mário no seu dispositivo, e no fim se divirta :)
 
 ## Referências 
 
