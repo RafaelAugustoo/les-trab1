@@ -110,39 +110,41 @@ terraform {
 ### Agora, no CMD ou Terminal, execute o seguinte comando: ```terraform init```.
  - Este comando inicia nosso ambiente e baixa os plugins necessários para nosso projeto.
  - O retorno gerado pelo comando, deve ser algo parecido com o que obtivemos abaixo:
- ![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/0f980114-a914-4250-911b-486edbf755b7)
+ ![1](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/6884d526-f6e6-443a-b66d-687f4686fa6b)
  
 O próximo passo será executar o planejamento do código. Ao rodar o planejamento o Terraform listará exatamente tudo o que fará caso o código seja de fato executado. 
 
 ### - No CMD ou Terminal execute: ```terraform plan```. 
-
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/411bfcfc-9d14-4ed6-83e8-e5b16423d902)
+![2](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/4597e1f8-2a23-44f3-93eb-bbaaf59d9ecf)
+![3](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/2921788e-fef2-4086-bca7-4a784e79abe2)
 
 Caso você tenha recebido um retorno similar a este, significa que tudo parece correto. Ao fim da linha, ele mostra quantos itens que serão adicionados, alterados ou destruídos.
 
 ### Após o sucesso do comando anterior, no CMD ou Terminal, execute o seguinte: ```terraform apply```.
 
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/d1eb631c-e001-4a53-b4c1-1b6770e374b9)
+![4](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/d512a4b5-ba72-4a3d-b28d-4ab8c24a6ab5)
 
 O Terraform avaliou o código e nos indicou o que será realizado, perguntando ao final se queremos ou não seguir com a execução. 
 
 Caso tudo nos pareça correto, basta digitar ```yes```  e pressionar Enter novamente para que ele siga com a execução de fato.
 
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/410d28e5-fe93-4134-b643-1de2100d04a9)
+![5](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/1fc1048d-9382-4d15-8aac-7af748dc839c)
 
 ### Curiosidade
 O Terraform também nos permite saber o que estamos utilizando em termos de resources através do comando ```terraform show```.
 
 ### Execute agora ````docker ps```` para ver os containers que estão rodando neste momento:
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/e006e127-6c0b-40d3-8c3d-41eabfa06bdd)
+![6](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/6e3561d9-c160-41fb-9d03-36c394fbcba1)
 
 ### Por fim, abra o navegador e acesse o seguinte endereço: ````localhost:80````.
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/c235ebfe-fb6e-4bca-91ee-5567c290d8eb)
+
+![7](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/dde221f9-bcaf-4eb4-ba8b-689aeb772cf7)
 
 ### Curiosidade 2
 
 O Terraform também nos permite destruir a nossa infraestrutura com o comando terraform destroy. Da mesma forma que o apply, o comando destroy também lhe dará uma prévia de o que será destruído e lhe pedirá par aconfirmar com um yes ou no:
-![image](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/430fbd48-9761-4157-8450-7f55686beb47)
+
+![8](https://github.com/RafaelAugustoo/les-trab1/assets/55588156/fb78323d-2fe4-41b6-a71d-c8e890fda2d3)
 
 ## Referências 
 
